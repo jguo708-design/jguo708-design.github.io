@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Jintao Guo — postgraduate coursework student in Sustainability at the University of Sydney, interested in environmental and resource economics, food and water security, and public policy.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jintao Guo | Academic Profile">
+  <meta property="og:description" content="Sustainability, environmental and resource economics, and public policy. An independent student academic portfolio.">
+  <title>Jintao Guo | Academic Profile</title>
+  <style>
+    :root {
+      --paper:#f6f5f1; --white:#ffffff; --ink:#1e302d; --ink-muted:#52635f;
+      --accent:#285d50; --accent-strong:#184838; --line:#d4dcd5;
+      --soft:#e9eeea; --gold:#ae8853; --sans:Arial, Helvetica, "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      --serif:Georgia, "Times New Roman", "Songti SC", "Noto Serif CJK SC", serif;
+    }
+    * {box-sizing:border-box}
+    html {scroll-behavior:smooth; scroll-padding-top:95px}
+    body {margin:0; color:var(--ink); background:var(--paper); font:16px/1.7 var(--sans); -webkit-font-smoothing:antialiased}
+    a {color:var(--accent); text-underline-offset:4px}
+    a:hover {color:var(--accent-strong)}
+    button {font:inherit}
+    :focus-visible {outline:3px solid var(--gold); outline-offset:4px}
+    ::selection {background:#dce9de}
+    .skip {position:absolute; top:-100px; left:12px; z-index:20; background:#fff; padding:10px 18px}
+    .skip:focus {top:10px}
+    .wrap {width:min(1110px,calc(100% - 56px)); margin-inline:auto}
+    .topbar {background:#ffffffee; backdrop-filter:blur(14px); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:15}
+    .topbar-inner {display:flex; align-items:center; justify-content:space-between; gap:22px; min-height:77px}
+    .brand {display:flex; flex-direction:column; line-height:1.15; text-decoration:none!important; color:var(--ink); min-width:200px}
+    .brand strong {font:700 19px/1.1 var(--serif); letter-spacing:-.02em}
+    .brand small {margin-top:6px; color:var(--ink-muted); font-size:10px; text-transform:uppercase; letter-spacing:.18em}
+    .nav-list {display:flex; gap:28px; align-items:center; list-style:none; margin:0; padding:0}
+    .nav-list a {text-decoration:none; color:var(--ink-muted); font-size:12px; font-weight:700; letter-spacing:.025em}
+    .nav-list a:hover {color:var(--accent)}
+    .language {background:transparent; border:1px solid #b9c6bd; border-radius:3px; padding:7px 12px; min-width:72px; cursor:pointer; color:var(--accent); font-size:12px; font-weight:700}
+    .language:hover {background:var(--soft)}
+    .hero {position:relative; overflow:hidden; background:#f6f5f1; border-bottom:1px solid var(--line)}
+    .hero-layout {display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr); gap:7%; align-items:center; min-height:570px; padding:77px 0 80px}
+    .kicker {color:var(--accent); font-size:11px; text-transform:uppercase; font-weight:800; letter-spacing:.2em; display:flex; align-items:center; gap:13px; margin:0 0 23px}
+    .kicker:before {content:""; display:block; width:30px; height:1px; background:var(--accent)}
+    h1,h2,h3,h4 {color:var(--ink); margin:0}
+    h1 {font:normal clamp(62px,8vw,112px)/.99 var(--serif); letter-spacing:-.075em; margin:0 0 22px}
+    h1 span {display:block; color:var(--accent)}
+    .hero-subtitle {font:normal clamp(22px,2.8vw,32px)/1.4 var(--serif); letter-spacing:-.015em; max-width:650px; margin:0 0 23px; color:#283d35}
+    .hero-intro {font-size:15px; line-height:1.9; color:var(--ink-muted); max-width:575px; margin:0 0 28px}
+    .hero-actions {display:flex; align-items:center; gap:23px; flex-wrap:wrap}
+    .primary-action {display:inline-flex; gap:16px; align-items:center; background:var(--accent); color:white!important; padding:11px 20px; font-size:12px; font-weight:750; letter-spacing:.02em; text-decoration:none; border:1px solid var(--accent); transition:background .16s}
+    .primary-action:hover {background:var(--accent-strong)}
+    .secondary-action {color:var(--ink)!important; font-size:12px; font-weight:700; text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:4px}
+    .hero-art {min-height:372px; align-self:stretch; border:1px solid #ccd7cc; background:linear-gradient(145deg,#e6ebe3,#f8f9f4 70%); position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:28px}
+    .hero-art svg {position:absolute; width:125%; height:122%; inset:-14% -19%; opacity:.72}
+    .hero-art-label {position:relative; z-index:1; border-top:1px solid #91a79a; padding-top:12px; display:flex; justify-content:space-between; align-items:end; gap:10px}
+    .hero-art-label span {font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:.2em; color:#547365}
+    .hero-art-label strong {font:italic 23px/1.2 var(--serif); color:#315c49; font-weight:normal}
+    .section {padding:82px 0 87px; border-bottom:1px solid var(--line)}
+    .section.alt {background:#ecf0eb}
+    .section-head {display:flex; align-items:start; justify-content:space-between; gap:24px; border-bottom:1px solid var(--line); padding-bottom:22px; margin-bottom:32px}
+    .section-title {display:flex; align-items:baseline; gap:17px}
+    .section-num {font:800 11px var(--sans); letter-spacing:.15em; color:var(--gold)}
+    h2 {font:normal clamp(30px,3.5vw,46px)/1.15 var(--serif); letter-spacing:-.045em}
+    .section-aside {color:var(--ink-muted); font-size:12px; max-width:260px; text-align:right; padding-top:11px}
+    .prose {font-size:15px; line-height:1.96; color:#435650}
+    .prose p {margin:0 0 17px}
+    .two-col {display:grid; grid-template-columns:1.3fr .7fr; gap:75px}
+    .side-panel {border-left:2px solid #bfd1c0; padding:4px 0 3px 23px}
+    .side-panel > h3 {font:700 11px var(--sans); letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin-bottom:15px}
+    .metadata {margin:0}
+    .metadata > div {padding:15px 0; border-top:1px solid var(--line)}
+    .metadata dt {color:#708076; font-size:10px; letter-spacing:.13em; font-weight:800; text-transform:uppercase}
+    .metadata dd {margin:6px 0 0; line-height:1.5; font-size:14px}
+    .topic-grid {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 26px}
+    .topic {display:grid; grid-template-columns:46px 1fr; gap:19px; align-items:start; padding:27px 0 30px; border-bottom:1px solid #cfd9d0}
+    .topic-id {color:var(--gold); font:normal 25px var(--serif); padding-top:2px}
+    .topic h3 {font:normal 24px/1.28 var(--serif); letter-spacing:-.025em; margin-bottom:10px}
+    .topic p {font-size:14px; line-height:1.8; color:var(--ink-muted); margin:0}
+    .work-list {display:grid; gap:0}
+    .work {display:grid; grid-template-columns:165px 1fr 28px; gap:22px; padding:27px 0; border-bottom:1px solid var(--line)}
+    .work:first-child {border-top:1px solid var(--line)}
+    .work small {display:block; color:#65796a; font-size:11px; line-height:1.65; letter-spacing:.04em}
+    .work small strong {color:var(--accent); display:block; font-size:11px; text-transform:uppercase; letter-spacing:.11em; margin-bottom:3px}
+    .work h3 {font:normal 24px/1.3 var(--serif); letter-spacing:-.02em; margin-bottom:8px}
+    .work p {font-size:14px; color:var(--ink-muted); margin:0; line-height:1.8}
+    .work-mark {color:var(--gold); font:28px var(--serif); text-align:right}
+    .disclosure {font-size:12px; color:#63786d; padding:20px 23px; margin-top:27px; border-left:3px solid var(--gold); background:#f0f1ea}
+    .education-grid {display:grid;grid-template-columns:1fr 1fr; gap:26px}
+    .education-item {border:1px solid #d2dcd2; background:#fffdf9; padding:28px 30px; min-height:230px}
+    .eyebrow {font-size:10px; color:var(--accent); letter-spacing:.14em; text-transform:uppercase; font-weight:800; display:block; margin-bottom:18px}
+    .education-item h3 {font:normal 25px/1.31 var(--serif); letter-spacing:-.02em; max-width:430px}
+    .education-item p {font-size:13px; color:var(--ink-muted); margin:17px 0 0}
+    .questions {display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px}
+    .question {border-top:2px solid #9ebaa7; padding:19px 0 4px}
+    .question strong {font:normal 20px/1.42 var(--serif); letter-spacing:-.015em; display:block; margin-bottom:12px}
+    .question p {font-size:13px; line-height:1.75; color:var(--ink-muted); margin:0}
+    .closing {background:#1b4035; color:#f4f5ed; padding:55px 0}
+    .closing-inner {display:flex; justify-content:space-between; align-items:center; gap:45px}
+    .closing h2 {color:#f4f5ed; font-size:38px; margin-bottom:10px}
+    .closing p {margin:0; color:#c7d8cd; max-width:660px; font-size:14px; line-height:1.8}
+    .closing .symbol {font:italic 66px var(--serif); color:#9fbba3; user-select:none}
+    footer {background:#123328; padding:21px 0; color:#a9c3b2; font-size:11px}
+    .footer-inner {display:flex; justify-content:space-between; align-items:center; gap:15px; flex-wrap:wrap}
+    body[data-language="en"] .zh {display:none!important}
+    body[data-language="zh"] .en {display:none!important}
+    body[data-language="zh"] h1,body[data-language="zh"] h2,body[data-language="zh"] h3 {letter-spacing:normal}
+    @media (max-width:950px) { .nav-list {gap:16px} .hero-layout {grid-template-columns:1.2fr .8fr;gap:30px} .two-col{gap:35px} .section{padding:65px 0} }
+    @media (max-width:760px) { .wrap {width:calc(100% - 38px)} .nav-list li:not(.language-item){display:none} .brand{min-width:unset} .hero-layout{grid-template-columns:1fr;min-height:unset;padding:55px 0 60px} .hero-art{min-height:235px} .two-col,.topic-grid,.education-grid,.questions{grid-template-columns:1fr} .topic{padding:21px 0} .work{grid-template-columns:1fr 20px;gap:8px} .work small{grid-column:1 / -1} .work-mark{grid-column:2;grid-row:2} .side-panel {margin-top:14px} .section-head{display:block} .section-aside{text-align:left;margin-top:10px} .closing-inner{align-items:start}.closing .symbol{font-size:38px} }
+    @media(max-width:460px){ h1{font-size:62px} .section{padding:51px 0} .hero-art{min-height:180px}.closing h2{font-size:31px} .footer-inner{display:block} .footer-inner span{display:block; margin:6px 0} }
+    @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto} .primary-action {transition:none}}
+  </style>
+</head>
+<body data-language="en">
+  <a class="skip" href="#main"><span class="en">Skip to content</span><span class="zh">跳至正文</span></a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top"><strong>Jintao Guo</strong><small><span class="en">Academic portfolio</span><span class="zh">个人学术档案</span></small></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about"><span class="en">About</span><span class="zh">关于</span></a></li>
+          <li><a href="#interests"><span class="en">Interests</span><span class="zh">兴趣方向</span></a></li>
+          <li><a href="#work"><span class="en">Selected work</span><span class="zh">课程项目</span></a></li>
+          <li><a href="#education"><span class="en">Education</span><span class="zh">教育背景</span></a></li>
+          <li class="language-item"><button class="language" type="button" id="language-switch" aria-label="Switch language" aria-pressed="false">中文</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero" id="top">
+    <div class="wrap hero-layout">
+      <div>
+        <p class="kicker"><span class="en">Student academic profile</span><span class="zh">学生学术档案</span></p>
+        <h1>Jintao <span>Guo</span></h1>
+        <p class="hero-subtitle en">Sustainability at the intersection of economics, environment and policy.</p>
+        <p class="hero-subtitle zh">在经济、环境与政策的交汇处，探索可持续发展。</p>
+        <p class="hero-intro en">Postgraduate coursework student in Sustainability at the University of Sydney, with a background in agricultural, environmental and resource economics.</p>
+        <p class="hero-intro zh">悉尼大学可持续发展方向授课型研究生，具有农业、环境与资源经济学的学习背景。</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#work"><span class="en">Explore selected work</span><span class="zh">查看课程项目</span><span aria-hidden="true">↗</span></a>
+          <a class="secondary-action" href="#about"><span class="en">Read my profile</span><span class="zh">了解我的背景</span></a>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract contour illustration representing interconnected environmental and social systems">
+        <svg viewBox="0 0 500 500" fill="none" aria-hidden="true" focusable="false">
+          <g stroke="#87a996" stroke-width="1.15">
+            <path d="M262 31 C365 18 444 110 446 220 S400 417 295 459 C181 506 65 439 45 333 C24 224 93 75 262 31Z"/>
+            <path d="M257 56 C348 41 417 122 422 223 S382 398 289 435 C185 476 92 415 73 324 C55 229 117 99 257 56Z"/>
+            <path d="M253 80 C339 66 391 131 397 226 S365 378 284 409 C196 443 117 389 101 315 C86 233 138 120 253 80Z"/>
+            <path d="M248 105 C316 93 369 147 372 229 S348 353 279 383 C205 413 147 368 130 307 C115 242 162 139 248 105Z"/>
+            <path d="M246 130 C304 119 341 156 346 232 S326 332 274 357 C215 387 175 348 157 299 C140 252 178 162 246 130Z"/>
+            <path d="M245 156 C295 142 321 172 320 233 S309 311 267 332 C226 350 194 334 184 293 C170 257 195 182 245 156Z"/>
+            <path d="M244 179 C282 172 298 186 296 235 S289 294 262 306 C233 322 219 307 210 285 C196 257 214 199 244 179Z"/>
+            <path d="M240 202 C267 196 274 206 274 236 S270 276 258 284 C236 298 232 279 231 264 C226 249 225 211 240 202Z"/>
+          </g>
+          <g stroke="#b9a078" stroke-width=".9" stroke-dasharray="5 7" opacity=".7"><path d="M35 248h430M253 24v445"/></g>
+          <circle cx="253" cy="244" r="5" fill="#aa8751"/>
+        </svg>
+        <div class="hero-art-label"><span><span class="en">Systems &amp; connections</span><span class="zh">系统与关联</span></span><strong>Economy × Ecology</strong></div>
+      </div>
+    </div>
+  </section>
+  <main id="main">
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-title"><span class="section-num">01 /</span><h2><span class="en">About</span><span class="zh">关于我</span></h2></div>
+          <div class="section-aside en">An interdisciplinary perspective on sustainable development</div>
+          <div class="section-aside zh">以跨学科视角理解可持续发展</div>
+        </div>
+        <div class="two-col">
+          <div class="prose">
+            <div class="en">
+              <p>My academic interests lie at the intersection of environmental and resource economics, sustainability, and public policy. I am interested in how societies make decisions when economic development, environmental protection, and social well-being must be considered together.</p>
+              <p>Through postgraduate coursework at the University of Sydney, I have explored issues involving food and water security, public administration, global health policy, and community environmental change.</p>
+              <p>This independent website brings together my academic interests and selected coursework topics. As I gain further experience, it will also document verified projects, activities, and professional engagement.</p>
+            </div>
+            <div class="zh">
+              <p>我的学术兴趣位于环境与资源经济学、可持续发展和公共政策的交叉领域。我关注的是，当经济发展、环境保护和社会福祉必须同时考虑时，社会应当如何作出决策。</p>
+              <p>在悉尼大学的研究生课程中，我接触了粮食与水资源安全、公共行政、全球卫生政策，以及社区环境变化等议题。</p>
+              <p>这个独立个人网站用于汇集我的学术兴趣和部分课程学习主题。随着经历积累，我也会逐步加入真实、可核实的项目和专业参与记录。</p>
+            </div>
+          </div>
+          <aside class="side-panel" aria-label="Profile summary">
+            <h3><span class="en">At a glance</span><span class="zh">基本信息</span></h3>
+            <dl class="metadata">
+              <div><dt><span class="en">Institution</span><span class="zh">院校</span></dt><dd>The University of Sydney</dd></div>
+              <div><dt><span class="en">Current study</span><span class="zh">目前学习</span></dt><dd><span class="en">Postgraduate coursework in Sustainability</span><span class="zh">可持续发展方向授课型研究生课程</span></dd></div>
+              <div><dt><span class="en">Academic background</span><span class="zh">学习背景</span></dt><dd><span class="en">Agricultural, Environmental &amp; Resource Economics</span><span class="zh">农业、环境与资源经济学</span></dd></div>
+              <div><dt><span class="en">Focus</span><span class="zh">关注方向</span></dt><dd><span class="en">Economics · Environment · Governance</span><span class="zh">经济 · 环境 · 公共治理</span></dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="section alt" id="interests">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-title"><span class="section-num">02 /</span><h2><span class="en">Areas of interest</span><span class="zh">学术兴趣</span></h2></div>
+          <div class="section-aside en">Questions and fields I continue to explore</div>
+          <div class="section-aside zh">我希望继续探索的问题与领域</div>
+        </div>
+        <div class="topic-grid">
+          <article class="topic"><span class="topic-id">I.</span><div><h3><span class="en">Environmental &amp; resource economics</span><span class="zh">环境与资源经济学</span></h3><p class="en">Incentives, trade-offs, and the economic management of land, water, and natural resources.</p><p class="zh">土地、水和自然资源管理中的激励机制、经济取舍与资源配置。</p></div></article>
+          <article class="topic"><span class="topic-id">II.</span><div><h3><span class="en">Food &amp; water security</span><span class="zh">粮食与水资源安全</span></h3><p class="en">Food system resilience, resource access, and the policy challenges of meeting human needs.</p><p class="zh">粮食系统韧性、资源可及性，以及满足基本需求的政策挑战。</p></div></article>
+          <article class="topic"><span class="topic-id">III.</span><div><h3><span class="en">Public policy &amp; governance</span><span class="zh">公共政策与治理</span></h3><p class="en">How institutions weigh efficiency, accountability, fairness, and broader public value.</p><p class="zh">公共机构如何权衡效率、问责、公平与更广泛的公共价值。</p></div></article>
+          <article class="topic"><span class="topic-id">IV.</span><div><h3><span class="en">Climate adaptation &amp; society</span><span class="zh">气候适应与社会</span></h3><p class="en">Social and economic responses to environmental change, including community resilience.</p><p class="zh">面对环境变化时社会和经济层面的应对方式，包括社区韧性。</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-title"><span class="section-num">03 /</span><h2><span class="en">Selected academic work</span><span class="zh">部分课程学术项目</span></h2></div>
+          <div class="section-aside en">Coursework-based learning, not peer-reviewed publications</div>
+          <div class="section-aside zh">基于课程学习的成果，并非同行评审论文</div>
+        </div>
+        <div class="work-list">
+          <article class="work">
+            <small><strong>GOVT6331</strong><span class="en">Coursework essay · Public governance</span><span class="zh">课程论文 · 公共治理</span></small>
+            <div><h3><span class="en">Performance measurement and public value</span><span class="zh">绩效衡量与公共价值</span></h3><p class="en">Exploring tensions between measurable performance, market-based approaches, and the wider purposes of public administration.</p><p class="zh">探讨可量化绩效、市场型机制与公共行政更广泛目标之间的张力。</p></div>
+            <span class="work-mark" aria-hidden="true">↗</span>
+          </article>
+          <article class="work">
+            <small><strong>SUST5002</strong><span class="en">Coursework topics · Sustainability</span><span class="zh">课程学习主题 · 可持续发展</span></small>
+            <div><h3><span class="en">Food systems and food security</span><span class="zh">粮食系统与粮食安全</span></h3><p class="en">Considering food access, resource limitations, food rescue, and the reliability of support for communities experiencing food insecurity.</p><p class="zh">关注食物获取、资源限制、食物救援，以及面临粮食不安全的社区能否获得稳定支持。</p></div>
+            <span class="work-mark" aria-hidden="true">↗</span>
+          </article>
+          <article class="work">
+            <small><strong>SCWK6052</strong><span class="en">Group podcast · Community studies</span><span class="zh">小组播客 · 社区研究</span></small>
+            <div><h3><span class="en">Community organising and environmental change</span><span class="zh">社区组织与环境变化</span></h3><p class="en">Using critical pedagogy and community organising as conceptual lenses for understanding community responses to environmental challenges.</p><p class="zh">从批判性教育学与社区组织的角度理解社区如何回应环境问题。</p></div>
+            <span class="work-mark" aria-hidden="true">↗</span>
+          </article>
+        </div>
+        <p class="disclosure"><span class="en">These entries describe selected university coursework. They are not academic publications, paid professional assignments, or research appointments. Supporting materials can be added later where sharing is permitted.</span><span class="zh">以上条目均为大学课程学习内容，不代表学术发表、受雇项目或研究职位。如符合课程和著作权要求，未来可以补充公开展示的成果材料。</span></p>
+      </div>
+    </section>
+    <section class="section alt" id="education">
+      <div class="wrap">
+        <div class="section-head"><div class="section-title"><span class="section-num">04 /</span><h2><span class="en">Education</span><span class="zh">教育背景</span></h2></div><div class="section-aside en">An evolving interdisciplinary foundation</div><div class="section-aside zh">持续拓展的跨学科基础</div></div>
+        <div class="education-grid">
+          <article class="education-item"><span class="eyebrow"><span class="en">Current · Postgraduate coursework</span><span class="zh">目前 · 授课型研究生学习</span></span><h3><span class="en">Sustainability</span><span class="zh">可持续发展</span></h3><p>The University of Sydney · Faculty of Science</p></article>
+          <article class="education-item"><span class="eyebrow"><span class="en">Undergraduate academic background</span><span class="zh">本科学习背景</span></span><h3><span class="en">Agricultural, Environmental and Resource Economics</span><span class="zh">农业、环境与资源经济学</span></h3><p>The University of Sydney</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="questions">
+      <div class="wrap">
+        <div class="section-head"><div class="section-title"><span class="section-num">05 /</span><h2><span class="en">Questions worth exploring</span><span class="zh">值得继续探索的问题</span></h2></div><div class="section-aside en">A record of intellectual interests, not a publication list</div><div class="section-aside zh">记录思考兴趣，并非论文清单</div></div>
+        <div class="questions">
+          <div class="question"><strong class="en">Can public services be efficient without losing public value?</strong><strong class="zh">公共服务能否兼顾效率与公共价值？</strong><p class="en">A question at the heart of governance and performance assessment.</p><p class="zh">公共治理和绩效评估中值得持续讨论的问题。</p></div>
+          <div class="question"><strong class="en">Why can food abundance coexist with food insecurity?</strong><strong class="zh">为什么食物充足的社会仍然有人吃不饱？</strong><p class="en">An invitation to look beyond aggregate production towards access and distribution.</p><p class="zh">从总产量进一步关注食物获取与分配。</p></div>
+          <div class="question"><strong class="en">Who should bear the costs of environmental change?</strong><strong class="zh">环境变化的成本应该由谁承担？</strong><p class="en">A starting point for thinking about economics, fairness, and policy design.</p><p class="zh">将经济分析、公平与政策设计连接起来的切入点。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="closing" aria-label="Closing statement"><div class="wrap closing-inner"><div><h2><span class="en">Learning, questioning, connecting.</span><span class="zh">学习，提问，建立连接。</span></h2><p class="en">This is a personal academic portfolio by a postgraduate coursework student. Future confirmed memberships, collaborative projects, and writing may be added here over time.</p><p class="zh">这是授课型研究生的独立学术档案。未来如获得会员资格、完成合作项目或新的写作成果，将在核实后逐步更新。</p></div><span class="symbol" aria-hidden="true">JG.</span></div></section>
+  <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Jintao Guo</span><span class="en">Independent student website · Not an official University of Sydney profile</span><span class="zh">独立学生网站 · 非悉尼大学官方学术主页</span></div></footer>
+  <script>
+    (function () {
+      const button = document.getElementById('language-switch');
+      button.addEventListener('click', function () {
+        const useChinese = document.body.dataset.language !== 'zh';
+        document.body.dataset.language = useChinese ? 'zh' : 'en';
+        document.documentElement.lang = useChinese ? 'zh-CN' : 'en';
+        button.textContent = useChinese ? 'English' : '中文';
+        button.setAttribute('aria-pressed', String(useChinese));
+      });
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+    })();
+  </script>
+</body>
+</html>
