@@ -92,10 +92,18 @@
     .education-item h3 {font:normal 25px/1.31 var(--serif); letter-spacing:-.02em; max-width:430px}
     .education-item p {font-size:13px; color:var(--ink-muted); margin:17px 0 0}
     .membership-entry {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:26px;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0 27px}
+    .membership-entry + .membership-entry {border-top:0}
     .membership-entry h3 {font:normal 26px/1.3 var(--serif);margin:8px 0 8px}
     .membership-entry p {font-size:14px;line-height:1.8;color:var(--ink-muted);margin:0}
     .membership-meta {font-size:12px;color:var(--ink-muted);text-align:right;white-space:nowrap}
-    .membership-note {font-size:12px;color:var(--ink-muted);margin-top:16px;line-height:1.8}
+    .activity-card {display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,.34fr);gap:34px;border:1px solid var(--line);background:#fffdf9;padding:30px}
+    .activity-card h3 {font:normal 26px/1.25 var(--serif);margin:8px 0 12px}
+    .activity-card p {font-size:14px;line-height:1.85;color:var(--ink-muted);margin:0 0 12px}
+    .activity-data {border-left:1px solid var(--line);padding-left:28px;display:flex;flex-direction:column;justify-content:center;gap:21px}
+    .activity-data strong {display:block;font:normal 33px/1.1 var(--serif);color:var(--accent)}
+    .activity-data small {display:block;color:var(--ink-muted);font-size:11px;margin-top:6px;line-height:1.5}
+    .activity-link {display:inline-block;font-weight:700;font-size:12px;margin-top:6px}
+
     .questions {display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px}
     .question {border-top:2px solid #9ebaa7; padding:19px 0 4px}
     .question strong {font:normal 20px/1.42 var(--serif); letter-spacing:-.015em; display:block; margin-bottom:12px}
@@ -111,7 +119,7 @@
     body[data-language="zh"] .en {display:none!important}
     body[data-language="zh"] h1,body[data-language="zh"] h2,body[data-language="zh"] h3 {letter-spacing:normal}
     @media (max-width:950px) { .nav-list {gap:16px} .hero-layout {grid-template-columns:1.2fr .8fr;gap:30px} .two-col{gap:35px} .section{padding:65px 0} }
-    @media (max-width:760px) { .wrap {width:calc(100% - 38px)} .nav-list li:not(.language-item){display:none} .brand{min-width:unset} .hero-layout{grid-template-columns:1fr;min-height:unset;padding:55px 0 60px} .hero-art{min-height:235px} .two-col,.topic-grid,.education-grid,.questions{grid-template-columns:1fr}.membership-entry{grid-template-columns:1fr;gap:6px}.membership-meta{text-align:left} .topic{padding:21px 0} .work{grid-template-columns:1fr 20px;gap:8px} .work small{grid-column:1 / -1} .work-mark{grid-column:2;grid-row:2} .side-panel {margin-top:14px} .section-head{display:block} .section-aside{text-align:left;margin-top:10px} .closing-inner{align-items:start}.closing .symbol{font-size:38px} }
+    @media (max-width:760px) { .wrap {width:calc(100% - 38px)} .nav-list li:not(.language-item){display:none} .brand{min-width:unset} .hero-layout{grid-template-columns:1fr;min-height:unset;padding:55px 0 60px} .hero-art{min-height:235px} .two-col,.topic-grid,.education-grid,.questions{grid-template-columns:1fr}.membership-entry{grid-template-columns:1fr;gap:6px}.membership-meta{text-align:left}.activity-card{grid-template-columns:1fr;gap:20px}.activity-data{border-left:0;border-top:1px solid var(--line);padding:20px 0 0;flex-direction:row;justify-content:flex-start;gap:35px} .topic{padding:21px 0} .work{grid-template-columns:1fr 20px;gap:8px} .work small{grid-column:1 / -1} .work-mark{grid-column:2;grid-row:2} .side-panel {margin-top:14px} .section-head{display:block} .section-aside{text-align:left;margin-top:10px} .closing-inner{align-items:start}.closing .symbol{font-size:38px} }
     @media(max-width:460px){ h1{font-size:62px} .section{padding:51px 0} .hero-art{min-height:180px}.closing h2{font-size:31px} .footer-inner{display:block} .footer-inner span{display:block; margin:6px 0} }
     @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto} .primary-action {transition:none}}
   </style>
@@ -128,6 +136,7 @@
           <li><a href="#work"><span class="en">Selected work</span><span class="zh">课程项目</span></a></li>
           <li><a href="#education"><span class="en">Education</span><span class="zh">教育背景</span></a></li>
           <li><a href="#memberships"><span class="en">Memberships</span><span class="zh">专业会员</span></a></li>
+          <li><a href="#citizen-science"><span class="en">Projects</span><span class="zh">项目参与</span></a></li>
           <li class="language-item"><button class="language" type="button" id="language-switch" aria-label="Switch language" aria-pressed="false">中文</button></li>
         </ul>
       </nav>
@@ -179,12 +188,12 @@
             <div class="en">
               <p>My academic interests lie at the intersection of environmental and resource economics, sustainability, and public policy. I am interested in how societies make decisions when economic development, environmental protection, and social well-being must be considered together.</p>
               <p>Through postgraduate coursework at the University of Sydney, I have explored issues involving food and water security, public administration, global health policy, and community environmental change.</p>
-              <p>This independent website brings together my academic interests and selected coursework topics. As I gain further experience, it will also document verified projects, activities, and professional engagement.</p>
+              <p>This website brings together my academic interests, selected coursework topics, professional memberships and citizen science contributions.</p>
             </div>
             <div class="zh">
               <p>我的学术兴趣位于环境与资源经济学、可持续发展和公共政策的交叉领域。我关注的是，当经济发展、环境保护和社会福祉必须同时考虑时，社会应当如何作出决策。</p>
               <p>在悉尼大学的研究生课程中，我接触了粮食与水资源安全、公共行政、全球卫生政策，以及社区环境变化等议题。</p>
-              <p>这个独立个人网站用于汇集我的学术兴趣和部分课程学习主题。随着经历积累，我也会逐步加入真实、可核实的项目和专业参与记录。</p>
+              <p>这个网站汇集了我的学术兴趣、部分课程项目、专业协会会员身份及公民科学贡献记录。</p>
             </div>
           </div>
           <aside class="side-panel" aria-label="Profile summary">
@@ -194,7 +203,7 @@
               <div><dt><span class="en">Current study</span><span class="zh">目前学习</span></dt><dd><span class="en">Postgraduate coursework in Sustainability</span><span class="zh">可持续发展方向授课型研究生课程</span></dd></div>
               <div><dt><span class="en">Academic background</span><span class="zh">学习背景</span></dt><dd><span class="en">Agricultural, Environmental &amp; Resource Economics</span><span class="zh">农业、环境与资源经济学</span></dd></div>
               <div><dt><span class="en">Focus</span><span class="zh">关注方向</span></dt><dd><span class="en">Economics · Environment · Governance</span><span class="zh">经济 · 环境 · 公共治理</span></dd></div>
-              <div><dt><span class="en">Professional membership</span><span class="zh">专业协会会员</span></dt><dd><a href="https://www.eianz.org/" target="_blank" rel="noopener noreferrer"><span class="en">EIANZ · Student Member</span><span class="zh">EIANZ · 学生会员</span></a></dd></div>
+              <div><dt><span class="en">Professional memberships</span><span class="zh">专业协会会员</span></dt><dd><a href="https://www.eianz.org/" target="_blank" rel="noopener noreferrer">EIANZ</a> · <a href="https://www.aares.org.au/" target="_blank" rel="noopener noreferrer">AARES</a><br><span class="en">Student Member (both)</span><span class="zh">两者均为学生会员</span></dd></div>
             </dl>
           </aside>
         </div>
@@ -267,13 +276,42 @@
           </div>
           <div class="membership-meta"><span class="en">23 October 2026 – 23 October 2027</span><span class="zh">2026年10月23日—2027年10月23日</span></div>
         </div>
-        <p class="membership-note en">Membership is listed at the level awarded and does not imply professional certification, employment, or a research appointment. Applications not yet approved are not listed.</p>
-        <p class="membership-note zh">此处仅展示已确认的会员身份；学生会员不等于专业认证、聘任或研究职位。尚未获批的申请暂不展示。</p>
+        <div class="membership-entry">
+          <div>
+            <span class="eyebrow"><span class="en">Student membership</span><span class="zh">学生会员</span></span>
+            <h3><a href="https://www.aares.org.au/" target="_blank" rel="noopener noreferrer">Australasian Agricultural and Resource Economics Society (AARES)</a></h3>
+            <p class="en">Student Member. A professional and academic community focused on agricultural, environmental and resource economics and related policy.</p>
+            <p class="zh">学生会员。AARES 是关注农业、环境与资源经济学及相关政策的专业和学术社群。</p>
+          </div>
+          <div class="membership-meta"><span class="en">Member since October 2026</span><span class="zh">2026年10月加入</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section alt" id="citizen-science">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-title"><span class="section-num">06 /</span><h2><span class="en">Citizen science &amp; volunteering</span><span class="zh">公民科学与志愿活动</span></h2></div>
+          <div class="section-aside en">Contributing to real-world environmental data</div>
+          <div class="section-aside zh">参与真实的环境数据整理工作</div>
+        </div>
+        <article class="activity-card">
+          <div>
+            <span class="eyebrow"><span class="en">DigiVol · Bush Heritage Australia</span><span class="zh">DigiVol · 澳大利亚丛林遗产组织</span></span>
+            <h3><span class="en">Wildlife camera-trap classification — Tarcutta</span><span class="zh">Tarcutta 野生动物红外相机影像分类</span></h3>
+            <p class="en">Contributed to a Bush Heritage Australia camera-trap expedition hosted on DigiVol, helping identify wildlife in images used to support biodiversity monitoring. The expedition's volunteer leaderboard recorded 1,026 contributions under my name, ranking third among 70 listed volunteers.</p>
+            <p class="zh">通过 DigiVol 参与 Bush Heritage Australia 的野生动物红外相机项目，协助辨识用于生物多样性监测的影像。该项目的志愿者贡献榜在我的名字旁记录了 1,026 项贡献，位列 70 名参与者中的第三名。</p>
+            <a class="activity-link" href="https://volunteer.ala.org.au/project/index/424209938" target="_blank" rel="noopener noreferrer"><span class="en">View the expedition and volunteer leaderboard ↗</span><span class="zh">查看项目与志愿者贡献榜 ↗</span></a>
+          </div>
+          <div class="activity-data" aria-label="Contributions shown on the expedition leaderboard">
+            <div><strong>1,026</strong><small><span class="en">Recorded contributions on this expedition</span><span class="zh">该项目贡献榜记录数</span></small></div>
+            <div><strong>3 / 70</strong><small><span class="en">Position among listed volunteers</span><span class="zh">志愿者贡献榜排名</span></small></div>
+          </div>
+        </article>
       </div>
     </section>
     <section class="section" id="questions">
       <div class="wrap">
-        <div class="section-head"><div class="section-title"><span class="section-num">06 /</span><h2><span class="en">Questions worth exploring</span><span class="zh">值得继续探索的问题</span></h2></div><div class="section-aside en">A record of intellectual interests, not a publication list</div><div class="section-aside zh">记录思考兴趣，并非论文清单</div></div>
+        <div class="section-head"><div class="section-title"><span class="section-num">07 /</span><h2><span class="en">Questions worth exploring</span><span class="zh">值得继续探索的问题</span></h2></div><div class="section-aside en">A record of intellectual interests, not a publication list</div><div class="section-aside zh">记录思考兴趣，并非论文清单</div></div>
         <div class="questions">
           <div class="question"><strong class="en">Can public services be efficient without losing public value?</strong><strong class="zh">公共服务能否兼顾效率与公共价值？</strong><p class="en">A question at the heart of governance and performance assessment.</p><p class="zh">公共治理和绩效评估中值得持续讨论的问题。</p></div>
           <div class="question"><strong class="en">Why can food abundance coexist with food insecurity?</strong><strong class="zh">为什么食物充足的社会仍然有人吃不饱？</strong><p class="en">An invitation to look beyond aggregate production towards access and distribution.</p><p class="zh">从总产量进一步关注食物获取与分配。</p></div>
@@ -282,8 +320,8 @@
       </div>
     </section>
   </main>
-  <section class="closing" aria-label="Closing statement"><div class="wrap closing-inner"><div><h2><span class="en">Learning, questioning, connecting.</span><span class="zh">学习，提问，建立连接。</span></h2><p class="en">This is a personal academic portfolio by a postgraduate coursework student. Future confirmed memberships, collaborative projects, and writing may be added here over time.</p><p class="zh">这是授课型研究生的独立学术档案。未来如获得会员资格、完成合作项目或新的写作成果，将在核实后逐步更新。</p></div><span class="symbol" aria-hidden="true">JG.</span></div></section>
-  <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Jintao Guo</span><span class="en">Independent student website · Not an official University of Sydney profile</span><span class="zh">独立学生网站 · 非悉尼大学官方学术主页</span></div></footer>
+  <section class="closing" aria-label="Closing statement"><div class="wrap closing-inner"><div><h2><span class="en">Learning, questioning, connecting.</span><span class="zh">学习，提问，建立连接。</span></h2><p class="en">A space to bring together my studies, projects, professional communities and ideas as they develop.</p><p class="zh">在这里记录我的学习、项目参与、专业交流和不断发展的想法。</p></div><span class="symbol" aria-hidden="true">JG.</span></div></section>
+  <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Jintao Guo</span><span class="en">Personal academic website · Sustainability &amp; resource economics</span><span class="zh">个人学术网站 · 可持续发展与资源经济学</span></div></footer>
   <script>
     (function () {
       const button = document.getElementById('language-switch');
